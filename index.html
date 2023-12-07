@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+    <title>profile design</title>
+    <style>
+      .box{ 
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  font-family:"poppins",'sanserif';
+}  
+.bgclr{
+  position:absolute;
+  top:96%; 
+ width:100%;  
+  height:120px;
+  background:#c5e2ff;
+}
+.prof{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+ position:absolute;
+  top:59%; 
+ width:100%;    
+}
+.prfimg{
+  display:flex;
+  justify-content:center;
+  align-items:flex-end;
+  padding:10px;
+  position: relative;
+}
+h1{
+  margin:5px;
+}
+.pimg{
+  object-fit:cover;
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  border:3px solid #ddd;
+}
+.top img{
+  width:100%;
+  height:120px;
+  object-fit:cover;
+}
+button{
+  border:none;
+  background:#ccdd;
+  padding:10px 12px;
+  border:2px solid #fff;
+  border-radius:10px;
+}
+.tick{
+  position:absolute;
+  top:18px;
+  left:90px;
+}
+.epf{
+  margin-right:40px;
+  margin-top:40px;
+}
+@media(max-width:768px){
+  .prof {
+   flex-direction:column;
+    background:#c5e2ff;
+}
+    </style>
+  </head>
+  <body>
+  
+  <div class="box">
+    <div class="top">
+      <img src="https://dash-ui-admin-template.vercel.app/images/background/profile-cover.jpg">
+    </div>
+  <div class="bgclr"> </div>
+    <div class="prof">        
+       <div class="prfimg">
+         <img src="https://assets.codepen.io/301308/internal/avatars/users/default.png" class="pimg">
+         <img src="https://dash-ui-admin-template.vercel.app/images/svg/checked-mark.svg" class="tick">
+         <div class="prftxt">
+        <h1>Codingwithssr</h1>
+        <span>@codingwithssr</span>
+      </div>
+      </div>      
+      <div class="epf">
+        <button type="">Edit Profile</button>
+      </div>  
+     </div>
+  </div>
+    
+</body>
+</html>
